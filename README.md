@@ -1,0 +1,4 @@
+# Windows 10 Telemetry Process Killer
+## The program I created in 2022 is designed to track and terminate telemetry processes in Windows 10.
+
+The "ProcessMonitor" class is designed to monitor and terminate a list of specified processes. It takes a list of "ProcessModel" objects as input, and has a method "StartMonitoring" to begin the monitoring process. The class uses a constant time interval of 10 seconds for checking processes, and continuously loops to check for running processes. If a process matches the name of a process in the list, it is terminated using the "KillTheProcess" method. This method creates a new process to execute a command-line command to terminate the process. The class also keeps track of the number of processes terminated, and outputs messages to the console indicating the status of the process termination.
